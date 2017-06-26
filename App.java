@@ -29,5 +29,18 @@ public class App {
     truck.mModel = "Ranger";
     truck.mMiles = 100000;
     truck.mPrice = 4000;
+
+    Vehicle[] allVehicles = {hatchback, suv, sedan, truck};
+
+    System.out.println("All Vehicles:");
+
+    for (Vehicle individualVehicle : allVehicles) {
+      System.out.println( "----------------------" );
+      System.out.println( individualVehicle.mYear );
+      System.out.println( individualVehicle.mBrand );
+      System.out.println( individualVehicle.mModel );
+      System.out.println( individualVehicle.mMiles );
+      System.out.println( individualVehicle.mPrice );
+    }
   }
 }
