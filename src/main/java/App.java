@@ -50,24 +50,24 @@ public class App {
         }
       } else if (navigationChoice.equals("Add Vehicle")) {
         System.out.println("Alright, let's add a vehicle! What year was this vehicle made?");
-            int userVehicleYear = Integer.parseInt(myConsole.readLine());
-            System.out.println("Great! What make or brand is the vehicle?");
-            String userVehicleBrand = myConsole.readLine();
-            System.out.println("Got it! What model is it?");
-            String userVehicleModel = myConsole.readLine();
-            System.out.println("And how many miles does it have on it?");
-            int userVehicleMiles = Integer.parseInt(myConsole.readLine());
-            System.out.println("Finally, what's its price?");
-            int userVehiclePrice = Integer.parseInt(myConsole.readLine());
-            Vehicle userVehicle = new Vehicle(userVehicleYear, userVehicleBrand, userVehicleModel, userVehicleMiles, userVehiclePrice);
-            allVehicles.add(userVehicle);
-            System.out.println("Alright, here's your new vehicle:");
-            System.out.println( "----------------------" );
-            System.out.println( userVehicle.getYear() );
-            System.out.println( userVehicle.getBrand() );
-            System.out.println( userVehicle.getModel() );
-            System.out.println( userVehicle.getMiles() );
-            System.out.println( userVehicle.getPrice() );
+          int userVehicleYear = Integer.parseInt(myConsole.readLine());
+          System.out.println("Great! What make or brand is the vehicle?");
+          String userVehicleBrand = myConsole.readLine();
+          System.out.println("Got it! What model is it?");
+          String userVehicleModel = myConsole.readLine();
+          System.out.println("And how many miles does it have on it?");
+          int userVehicleMiles = Integer.parseInt(myConsole.readLine());
+          System.out.println("Finally, what's its price?");
+          int userVehiclePrice = Integer.parseInt(myConsole.readLine());
+          Vehicle userVehicle = new Vehicle(userVehicleYear, userVehicleBrand, userVehicleModel, userVehicleMiles, userVehiclePrice);
+          allVehicles.add(userVehicle);
+          System.out.println("Alright, here's your new vehicle:");
+          System.out.println( "----------------------" );
+          System.out.println( userVehicle.getYear() );
+          System.out.println( userVehicle.getBrand() );
+          System.out.println( userVehicle.getModel() );
+          System.out.println( userVehicle.getMiles() );
+          System.out.println( userVehicle.getPrice() );
       } else if (navigationChoice.equals("Exit")) {
         programRunning = false;
       } else {
