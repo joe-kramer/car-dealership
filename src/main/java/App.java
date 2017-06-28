@@ -27,11 +27,11 @@ public class App {
       if (navigationChoice.equals("All Vehicles")) {
         for ( Vehicle individualVehicle : allVehicles ) {
           System.out.println( "----------------------" );
-          System.out.println( individualVehicle.mYear );
-          System.out.println( individualVehicle.mBrand );
-          System.out.println( individualVehicle.mModel );
-          System.out.println( individualVehicle.mMiles );
-          System.out.println( individualVehicle.mPrice );
+          System.out.println( individualVehicle.getYear() );
+          System.out.println( individualVehicle.getBrand() );
+          System.out.println( individualVehicle.getModel() );
+          System.out.println( individualVehicle.getMiles() );
+          System.out.println( individualVehicle.getPrice() );
         }
       } else if (navigationChoice.equals("Search Price")) {
         System.out.println("What is your maximum budget for a vehicle?");
@@ -41,11 +41,11 @@ public class App {
         for ( Vehicle individualVehicle : allVehicles ) {
           if (individualVehicle.worthBuying(userMaxBudget)){
             System.out.println( "----------------------" );
-            System.out.println( individualVehicle.mYear );
-            System.out.println( individualVehicle.mBrand );
-            System.out.println( individualVehicle.mModel );
-            System.out.println( individualVehicle.mMiles );
-            System.out.println( individualVehicle.mPrice );
+            System.out.println( individualVehicle.getYear() );
+            System.out.println( individualVehicle.getBrand() );
+            System.out.println( individualVehicle.getModel() );
+            System.out.println( individualVehicle.getMiles() );
+            System.out.println( individualVehicle.getPrice() );
           }
         }
       } else if (navigationChoice.equals("Add Vehicle")) {
@@ -63,11 +63,11 @@ public class App {
             allVehicles.add(userVehicle);
             System.out.println("Alright, here's your new vehicle:");
             System.out.println( "----------------------" );
-            System.out.println( userVehicle.mYear );
-            System.out.println( userVehicle.mBrand );
-            System.out.println( userVehicle.mModel );
-            System.out.println( userVehicle.mMiles );
-            System.out.println( userVehicle.mPrice );
+            System.out.println( userVehicle.getYear() );
+            System.out.println( userVehicle.getBrand() );
+            System.out.println( userVehicle.getModel() );
+            System.out.println( userVehicle.getMiles() );
+            System.out.println( userVehicle.getPrice() );
       } else if (navigationChoice.equals("Exit")) {
         programRunning = false;
       } else {
