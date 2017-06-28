@@ -1,9 +1,9 @@
 class Vehicle {
-  public int mYear;
-  public String mBrand;
-  public String mModel;
-  public int mMiles;
-  public int mPrice;
+  private int mYear;
+  private String mBrand;
+  private String mModel;
+  private int mMiles;
+  private int mPrice;
 
   public Vehicle(int year, String brand, String model, int miles, int price) {
     mYear = year;
